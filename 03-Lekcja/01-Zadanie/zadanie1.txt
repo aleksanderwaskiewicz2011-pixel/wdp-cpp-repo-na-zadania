@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+
+    cin >> a >> b;
+
+    if (a > b)
+    {
+        cout << "Wieksza: " << a << endl;
+        cout << "Mniejsza: " << b << endl;
+        cout << a << " > " << b;
+    }
+    else if (a < b)
+    {
+        cout << "Wieksza: " << b << endl;
+        cout << "Mniejsza: " << a << endl;
+        cout << a << " < " << b;
+    }
+    else
+    {
+        cout << "Liczby sa rowne" << endl;
+        cout << "Wieksza: " << a << endl;
+        cout << "Mniejsza: " << b << endl;
+        cout << a << " == " << b;
+    }
+
+    return 0;
+}
