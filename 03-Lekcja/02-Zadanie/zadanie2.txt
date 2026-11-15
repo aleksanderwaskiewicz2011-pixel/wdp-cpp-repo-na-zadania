@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    char dzialanie;
+
+    cin >> a;
+    cin >> dzialanie;
+    cin >> b;
+
+    if (dzialanie == '+')
+        cout << a + b;
+    else if (dzialanie == '-')
+        cout << a - b;
+    else if (dzialanie == '*')
+        cout << a * b;
+    else if (dzialanie == '/')
+    {
+        if (b != 0)
+            cout << a / b;
+        else
+            cout << "Nie mozna dzielic przez 0";
+    }
+    else if (dzialanie == '%')
+    {
+        if (b != 0)
+            cout << a % b;
+        else
+            cout << "Nie mozna wykonac modulo przez 0";
+    }
+    else
+    {
+        cout << "Bledny znak dzialania";
+    }
+
+    return 0;
+}
