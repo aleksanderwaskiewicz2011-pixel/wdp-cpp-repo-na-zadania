@@ -1,0 +1,19 @@
+ZADANIE 2
+
+Program pobiera liczbę n, a następnie wczytuje n liczb rzeczywistych.
+Na końcu oblicza sumę i średnią tych liczb.
+
+kod Python:
+
+n = int(input("Ile liczb chcesz podać? "))
+
+suma = 0
+
+for i in range(n):
+    liczba = float(input(f"Podaj liczbę {i + 1}: "))
+    suma += liczba
+
+srednia = suma / n
+
+print("Suma liczb:", suma)
+print("Średnia:", srednia)
