@@ -1,0 +1,36 @@
+ZADANIE 3
+
+Program wczytuje liczby całkowite aż do momentu wpisania 0.
+Zero kończy działanie programu i nie jest brane do obliczeń.
+Program wyświetla największą liczbę, najmniejszą liczbę, sumę oraz średnią.
+
+kod Python:
+
+liczba = int(input("Podaj liczbę (0 kończy): "))
+
+maks = liczba
+mini = liczba
+suma = liczba
+licznik = 1
+
+while True:
+    liczba = int(input("Podaj liczbę (0 kończy): "))
+
+    if liczba == 0:
+        break
+
+    if liczba > maks:
+        maks = liczba
+
+    if liczba < mini:
+        mini = liczba
+
+    suma += liczba
+    licznik += 1
+
+srednia = suma / licznik
+
+print("Największa liczba:", maks)
+print("Najmniejsza liczba:", mini)
+print("Suma:", suma)
+print("Średnia:", srednia)
